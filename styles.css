@@ -246,6 +246,25 @@ tbody tr {
   filter: invert(1);
 }
 
+@media (max-width: 576px) {
+  section.container.mx-auto.p-2 {
+    width: 320px !important;  /* ancho máximo más pequeño para celular */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  table.table {
+    font-size: 0.85rem; /* tamaño de texto más pequeño */
+  }
+
+  table.table th,
+  table.table td {
+    padding: 0.3rem 0.5rem; /* menos padding para celdas */
+  }
+}
+
 /*Estilados de la pagina "sobre mi" */
 
 .modo-oscuro .card {
