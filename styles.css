@@ -261,6 +261,33 @@ tbody tr {
 
 .card {
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  max-width: 350px;
+  margin: auto;
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.info-card {
+  max-width: 450px;
+  margin: 0 auto;
+  height: 350px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
 }
 
 .modo-oscuro .list-group-item {
@@ -326,11 +353,10 @@ tbody tr {
     cursor: pointer;
 }
 
-
 .cartas_avisos:hover {
-  transform: scale(1.05); /* Agranda un 5% */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Le da sombra para destacarla */
-  z-index: 10; /* Que quede por encima de otras cards */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); 
+  z-index: 10; 
 }
 
 .modal-body {
@@ -338,7 +364,7 @@ tbody tr {
   overflow-y: auto; 
   white-space: pre-line;
 }
-/* Cartas / presentación */
+
 .card {
     background-color: white;
     color: black;
@@ -370,29 +396,22 @@ tbody tr {
 .dark-mode main form#contactForm input,
 .dark-mode main form#contactForm textarea,
 .dark-mode main form#contactForm label {
-  background-color: #fff;  /* fondo blanco */
-  color: #000;             /* texto negro */
-  border-color: #999;      /* borde gris medio */
+  background-color: #fff;  
+  color: #000;             
+  border-color: #999;      
 }
 
 .dark-mode main form#contactForm input::placeholder,
 .dark-mode main form#contactForm textarea::placeholder {
-  color: #555;  /* gris oscuro para placeholder */
+  color:#06a821;
 }
 
-.dark-mode main form#contactForm .form-text,
-.dark-mode main form#contactForm .invalid-feedback {
-  color: #333;
-}
-
-.dark-mode main form#contactForm button {
-  background-color: #eee;
-  color: #000;
-  border: none;
-}
-
-.dark-mode main form#contactForm button:hover {
-  background-color: #ddd;
+@media (max-width: 576px) {
+  #contactForm {
+    max-width: 320px;  /* ancho máximo deseado */
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*estilados del mensaje que aparece cuando tocamos enviar*/
@@ -406,7 +425,7 @@ tbody tr {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1050; /* encima de Bootstrap modals */
+  z-index: 1050; 
 }
 
 #mensajeOverlay.visible {
@@ -432,6 +451,10 @@ tbody tr {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+}
+
+.mensajeModal button:hover {
+  background-color: #0056b3;
 }
 
 .mensajeModal button:hover {
