@@ -1,3 +1,4 @@
+// la estructura JS de la pagina contacto estara aqui
 (function () {
   'use strict';
   const form = document.getElementById('contactForm');
