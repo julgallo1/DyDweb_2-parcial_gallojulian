@@ -25,6 +25,7 @@ header {
     width: 100%;
     height: 100px;
     position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .enlace {
@@ -154,9 +155,15 @@ footer {
     padding: 1rem 0;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 0;
-    border-top: none
+    border-top: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.icono-footer:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 
 
 /* estiladoes para el contenedor principal de cada pagina*/
@@ -202,8 +209,16 @@ footer {
 }
 
 /* estilados para el index*/
+
+.seccionTabla{
+    margin-bottom: 30px;
+}
+thead tr{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 tbody tr {
   cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .modo-oscuro table {
@@ -279,33 +294,40 @@ tbody tr {
 }
 
 .card {
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  width: 100%;
   max-width: 350px;
   margin: auto;
 }
 
 .card-img-top {
-  height: 200px; 
+  height: 200px;
   object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .info-card {
+  width: 100%;
   max-width: 450px;
-  margin: 0 auto;
-  height: 350px; 
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1.5rem;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 @media (max-width: 768px) {
+  .info-card {
+    padding: 1rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
   .card-img-top {
-    height: 200px;
+    height: 180px;
   }
 }
 
@@ -324,16 +346,30 @@ tbody tr {
     filter: brightness(50%);
 }
 
+.carousel-item {
+  position: relative;
+}
+
 .tituloCarrusel {
   position: absolute;
-  top: 50%;
+  bottom: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 1px 1px 5px black;
-  font-size: 2.5rem;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  text-align: center;
+  background-color: rgba(34, 93, 38, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+@media (max-width: 576px) {
+  .tituloCarrusel {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
 }
 
 .carousel-item img {
@@ -382,12 +418,14 @@ tbody tr {
   max-height: 60vh;
   overflow-y: auto; 
   white-space: pre-line;
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card {
     background-color: white;
     color: black;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Estilados para la pagina "contacto" */
@@ -445,6 +483,7 @@ tbody tr {
   justify-content: center;
   align-items: center;
   z-index: 1050; 
+  font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #mensajeOverlay.visible {
@@ -459,6 +498,7 @@ tbody tr {
   text-align: center;
   max-width: 90%;
   box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  
 }
 
 .mensajeModal button {
