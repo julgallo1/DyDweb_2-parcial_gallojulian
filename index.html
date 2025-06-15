@@ -1,4 +1,4 @@
-
+<!--Estuctura HTML para la pagina HOME-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +18,9 @@
       <label for="check" class="checkbtn">
         <i class="fa-sharp fa-solid fa-bars"></i>
       </label>
-      <a href="./index.html" class="enlace">
-        <img src="./IMG/logoUADE.png" alt="" class="logo" />
+      <a href="https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/
+      licenciatura-en-gestion-de-tecnologia-de-la-informacion/plan-de-estudios/#!" class="enlace">
+        <img src="./IMG/logoUADE.png" alt="imagen del logo de la universidad" class="logo" />
       </a>
 
       <ul>
@@ -35,13 +36,13 @@
   <main>
       <div class="container d-flex justify-content-between align-items-center my-4">
         <h1 class="tituloPrincipal mb-0">HOME</h1>
-        <div class="cambioModo" style="cursor: pointer;">
+        <div class="cambioModo" style="cursor: pointer;" data-bs-toggle="tooltip" title="alternar entre modo claro y oscuro">
             <i class="fa-solid fa-moon text-dark iconoLuna" style="font-size: 2rem;"></i>
             <i class="fa-solid fa-sun text-warning iconoSol d-none" style="font-size: 2rem;"></i>
         </div>
     </div>
-
-    <section class="container mx-auto p-2" style="width: 400px;">
+<!-- codigo de la tabla de materias-->
+    <section class="container mx-auto p-2 seccionTabla" style="width: 400px;">
       <div class="row">
         <div class="col">
           <table class="table border border-black table-hover text-center">
@@ -83,6 +84,14 @@
         </div>
       </div>
     </section>
+
+    <!--codigo del boton a la pagina de la carrera-->
+    <div class="text-center my-4">
+      <a href="https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/licenciatura-en-gestion-de-tecnologia-de-la-informacion/plan-de-estudios/#!" target="_blank" class="btn btn-outline-success btn-lg px-4 shadow-sm">
+        Ir a la pagina de la Carrera
+        <i class="fas fa-arrow-right ms-2"></i>
+      </a>
+    </div>
     
     <!--estructura para cuando hacemos click sobre las materias-->
     <div class="modal fade" id="modalMateria" tabindex="-1" aria-labelledby="modalMateriaLabel" aria-hidden="true">
@@ -100,19 +109,20 @@
   </div>
   </main>
 
-  <footer class="bg-success text-light text-center py-4">
+  <footer class="bg-success text-light text-center py-4 shadow-lg">
     <div class="container">
-      <p class="mb-1">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
-      <p class="mb-1">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
-      <div>
-        <a href="https://www.linkedin.com/in/julian-gallo-/" target="_blank" class="text-light me-3">
-          <i class="fab fa-linkedin fa-lg"></i>
+      <p class="mb-1 fs-6">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
+      <p class="mb-1 fs-6">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
+      
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-3">
+        <a href="https://www.linkedin.com/in/julian-gallo-/" target="_blank" class="text-light icono-footer">
+          <i class="fab fa-linkedin fa-xl"></i>
         </a>
-        <a href="https://outlook.office365.com/mail/inbox/id/AAQkADc3YzBmNGUxLTY3NmEtNGQ2NC1hZmMwLTQyOWU4NzI4N2ZlNQAQAOUBTUKbE4xDtrkkWy%2FfprA%3D" class="text-light me-3">
-          <i class="fas fa-envelope fa-lg"></i>
+        <a href="mailto:juliangallo@ejemplo.com" class="text-light icono-footer">
+          <i class="fas fa-envelope fa-xl"></i>
         </a>
-        <a href="https://github.com/julgallo1" target="_blank" class="text-light">
-          <i class="fab fa-github fa-lg"></i>
+        <a href="https://github.com/julgallo1" target="_blank" class="text-light icono-footer">
+          <i class="fab fa-github fa-xl"></i>
         </a>
       </div>
     </div>
