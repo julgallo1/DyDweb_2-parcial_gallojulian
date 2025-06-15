@@ -1,3 +1,4 @@
+<!--Estuctura HTML para la pagina SOBRE MI-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,8 +25,9 @@
       <label for="check" class="checkbtn">
         <i class="fa-sharp fa-solid fa-bars"></i>
       </label>
-      <a href="./index.html" class="enlace">
-        <img src="./IMG/logoUADE.png" alt="Logo UADE" class="logo" />
+      <a href="https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/
+      licenciatura-en-gestion-de-tecnologia-de-la-informacion/plan-de-estudios/#!" class="enlace">
+        <img src="./IMG/logoUADE.png" alt="" class="logo" />
       </a>
 
       <ul>
@@ -41,12 +43,14 @@
   <main>
       <div class="container d-flex justify-content-between align-items-center my-4">
         <h1 class="tituloPrincipal mb-0">SOBRE MI</h1>
-        <div class="cambioModo" style="cursor: pointer;">
+        <div class="cambioModo" style="cursor: pointer;" data-bs-toggle="tooltip" title="alternar entre modo claro y oscuro">
             <i class="fa-solid fa-moon text-dark iconoLuna" style="font-size: 2rem;"></i>
             <i class="fa-solid fa-sun text-warning iconoSol d-none" style="font-size: 2rem;"></i>
         </div>
     </div>
 
+    <!--codigo de las dos cards que hay en la pagina-->
+    <!--card de la imagen-->
     <section class="container my-5">
       <div class="row justify-content-center g-4">
         <div class="col-12 col-md-5">
@@ -55,6 +59,7 @@
           </div>
         </div>
 
+        <!--card de la informacion-->
         <div class="col-12 col-md-7 d-flex justify-content-center">
           <div class="card shadow p-3 h-100 info-card">
             <div class="card-body">
@@ -66,6 +71,9 @@
                   <li class="list-group-item">Carrera: Licenciatura en Gestión de la Tecnología de la Información</li>
                   <li class="list-group-item">Edad: 21 años</li>
                   <li class="list-group-item">Universidad: UADE</li>
+                  <p class="card-text p-3">
+                  Al dia de hoy, me encuentro trabajando en la secretaria de deportes de la ciudad de Buenos Aires.
+                </p>
                 </ul>
             </div>
           </div>
@@ -75,26 +83,21 @@
   </section>
 </main>
 
-  <footer class="bg-success text-light text-center py-4 mt-5">
+  <footer class="bg-success text-light text-center py-4 shadow-lg">
     <div class="container">
-      <p class="mb-1">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
-      <p class="mb-1">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/tuusuario"
-          target="_blank"
-          class="text-light me-3"
-          ><i class="fab fa-linkedin fa-lg"></i
-        ></a>
-        <a href="mailto:tuemail@ejemplo.com" class="text-light me-3"
-          ><i class="fas fa-envelope fa-lg"></i
-        ></a>
-        <a
-          href="https://github.com/tuusuario"
-          target="_blank"
-          class="text-light"
-          ><i class="fab fa-github fa-lg"></i
-        ></a>
+      <p class="mb-1 fs-6">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
+      <p class="mb-1 fs-6">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
+      
+      <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-3">
+        <a href="https://www.linkedin.com/in/julian-gallo-/" target="_blank" class="text-light icono-footer">
+          <i class="fab fa-linkedin fa-xl"></i>
+        </a>
+        <a href="mailto:juliangallo@ejemplo.com" class="text-light icono-footer">
+          <i class="fas fa-envelope fa-xl"></i>
+        </a>
+        <a href="https://github.com/julgallo1" target="_blank" class="text-light icono-footer">
+          <i class="fab fa-github fa-xl"></i>
+        </a>
       </div>
     </div>
   </footer>
