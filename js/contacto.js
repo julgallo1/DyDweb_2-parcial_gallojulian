@@ -1,23 +1,4 @@
 // la estructura JS de la pagina contacto estara aqui
-(function () {
-  'use strict';
-  const form = document.getElementById('contactForm');
-  form.addEventListener('submit', function (event) {
-    if (!form.checkValidity()) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-    form.classList.add('was-validated');
-  }, false);
-})();
-
-$(document).ready(function () {
-  $('.cambioModo').click(function() {
-    $('body').toggleClass('dark-mode');
-    $('.iconoLuna').toggleClass('d-none');
-    $('.iconoSol').toggleClass('d-none');
-  });
-});
 
 (function () {
   'use strict';
@@ -36,7 +17,7 @@ $(document).ready(function () {
 
     const nombre = document.getElementById('inputName').value.trim();
 
-    const mensaje = `${nombre}, en breve le estaré respondiendo.`;
+    const mensaje = `${nombre}, en breve te estaré respondiendo.`;
 
     mostrarMensaje(mensaje);
 
@@ -54,12 +35,7 @@ $(document).ready(function () {
       document.body.appendChild(overlay);
     }
     
-    overlay.innerHTML = `
-      <div class="mensajeModal">
-        <p>${texto}</p>
-        <button id="cerrarMensaje">Cerrar</button>
-      </div>
-    `;
+    overlay.innerHTML = `<div class="mensajeModal"><p>${texto}</p><button id="cerrarMensaje">Cerrar</button></div>`;
 
     overlay.classList.add('visible');
 
