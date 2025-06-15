@@ -22,7 +22,8 @@ $(document).ready(function() {
       description: [
         "Ejercicio individual: JavaScript",
         "Práctica Formulario Javascript sitio individual personal obligatorio (realizado para el parcial)",
-        "Modo claro y oscuro"
+        "Modo claro y oscuro",
+        "ejercicio de integracion con GitHub"
       ]
     }
   };
