@@ -1,3 +1,4 @@
+<!--Estuctura HTML para la pagina AVISOS-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,48 +13,44 @@
 
 <body>
     <header class="bg-success text-light">
-        
         <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-            </label>
-            <a href="./index.html" class="enlace">
-                <img src="./IMG/logoUADE.png" alt="" class="logo">
-            </a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+        <a href="https://www.uade.edu.ar/facultad-de-ingenieria-y-ciencias-exactas/
+        licenciatura-en-gestion-de-tecnologia-de-la-informacion/plan-de-estudios/#!" class="enlace">
+            <img src="./IMG/logoUADE.png" alt="Imagen del logo de la universidad." class="logo" />
+        </a>
 
-            <ul>
-                <li><a href="./index.html">Home</a></li>                        
-                <li><a href="./sobreMi.html">Sobre mi</a></li>                        
-                <li><a href="./materias_2025.html">Materias</a></li>                      
-                <li><a href="#" class="active">Avisos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-            
-            <section>
-
-            </section>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sobreMi.html">Sobre mi</a></li>
+            <li><a href="./materias_2025.html">Materias</a></li>
+            <li><a href="#" class="active">Avisos</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
         </nav>
-
-    </header>
+  </header>
 
     <main>
         
         <div class="container d-flex justify-content-between align-items-center my-4">
         <h1 class="tituloPrincipal mb-0">AVISOS</h1>
-        <div class="cambioModo" style="cursor: pointer;">
+        <div class="cambioModo" style="cursor: pointer;" data-bs-toggle="tooltip" title="alternar entre modo claro y oscuro">
             <i class="fa-solid fa-moon text-dark iconoLuna" style="font-size: 2rem;"></i>
             <i class="fa-solid fa-sun text-warning iconoSol d-none" style="font-size: 2rem;"></i>
         </div>
     </div>
 
-         <section class="container text-center">
+    <!--codigo de las cards de la pagina-->
+         <section class="container text-center mb-5">
 
             <div class="row justify-content-center row-cols-1 row-cols-md-3 g-4 mb-3">
-                <!-- card 1 -->
+                
                 <div class="col">
                     <div class="card h-100 cartas_avisos">
-                        <img src="./IMG/arquitecturaComputadores.jpeg" class="card-img-top" alt="...">
+                        <img src="./IMG/arquitecturaComputadores.jpeg" class="card-img-top" alt="Imagen representativa de la materia arquitectura de computadores">
                         <div class="card-body">
                         </div>
                         <div class="card-footer">
@@ -63,7 +60,7 @@
                 </div>
                 <div class="col"> 
                     <div class="card h-100 cartas_avisos">
-                        <img src="./IMG/sistemasInformaticos.jpg" class="card-img-top" alt="...">
+                        <img src="./IMG/sistemasInformaticos.jpg" class="card-img-top" alt="Imagen representativa de la materia sistemas de informacion I">
                         <div class="card-body">
                         </div>
                         <div class="card-footer">
@@ -73,11 +70,11 @@
                 </div>
                 <div class="col">
                     <div class="card h-100 cartas_avisos">
-                        <img src="./IMG/imagenPython.jpg" class="card-img-top" alt="...">
+                        <img src="./IMG/imagenPython.jpg" class="card-img-top" alt="Imagen representativa de la materia fundamentos de informatica">
                         <div class="card-body">
                         </div>
                         <div class="card-footer">
-                        <h5>Introducción a la algoritmia</h5>
+                        <h5>Fundamentos de informatica</h5>
                         </div>
                     </div>
                 </div>
@@ -86,7 +83,7 @@
             <div class="row justify-content-center row-cols-1 row-cols-md-2 g-4">
                 <div class="col-md-3">
                 <div class="card h-100 cartas_avisos">
-                    <img src="./IMG/marketing.png" class="card-img-top" alt="...">
+                    <img src="./IMG/marketing.png" class="card-img-top" alt="Imagen representativa de la materia marketing">
                     <div class="card-body">
                     </div>
                     <div class="card-footer">
@@ -96,7 +93,7 @@
                 </div>
                 <div class="col-md-3">
                 <div class="card h-100 cartas_avisos">
-                    <img src="./IMG/DyDweb.jpeg" class="card-img-top" alt="...">
+                    <img src="./IMG/DyDweb.jpeg" class="card-img-top" alt="Imagen representativa de la materia diseño y desarrollo web">
                     <div class="card-body">
                     </div>
                     <div class="card-footer">
@@ -107,6 +104,7 @@
             </div>
         </section>
 
+        <!--codigo para cuando hacemos click en una materia aparezca una ventana emergente-->
         <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable"> <!-- permite scroll -->
                 <div class="modal-content">
@@ -128,23 +126,24 @@
 
     
 
-    <footer class="bg-success text-light text-center py-4 mt-5">
+    <footer class="bg-success text-light text-center py-4 shadow-lg">
         <div class="container">
-            <p class="mb-1">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
-            <p class="mb-1">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
-            <div>
-            <a href="https://www.linkedin.com/in/tuusuario" target="_blank" class="text-light me-3">
-                <i class="fab fa-linkedin fa-lg"></i>
-            </a>
-            <a href="mailto:tuemail@ejemplo.com" class="text-light me-3">
-                <i class="fas fa-envelope fa-lg"></i>
-            </a>
-            <a href="https://github.com/tuusuario" target="_blank" class="text-light">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
+            <p class="mb-1 fs-6">Curso: 15130 / Profesora: Patricia Carina Litovicius</p>
+            <p class="mb-1 fs-6">&copy; 2025 Julian Gallo - Entrega del segundo parcial</p>
+            
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mt-3">
+                <a href="https://www.linkedin.com/in/julian-gallo-/" target="_blank" class="text-light icono-footer">
+                <i class="fab fa-linkedin fa-xl"></i>
+                </a>
+                <a href="mailto:juliangallo@ejemplo.com" class="text-light icono-footer">
+                <i class="fas fa-envelope fa-xl"></i>
+                </a>
+                <a href="https://github.com/julgallo1" target="_blank" class="text-light icono-footer">
+                <i class="fab fa-github fa-xl"></i>
+                </a>
             </div>
         </div>
-    </footer>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
